@@ -32,6 +32,7 @@ write.csv(Outdat,"op.csv")
 # Exploratory Data Analysis
 library(DataExplorer)
 
+
 # Column details such as categorical or continuous
 plot_str(Indat)
 # missing data plot of each column
@@ -49,4 +50,7 @@ plot_correlation(Indat, type = 'continuous','Archive.Date')
 plot_bar(Indat)
 # Create Report
 
-create_report(Indat)
+#create_report(Indat)
+
+
+In_Out=rbind(Outdat,Indat);
